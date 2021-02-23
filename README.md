@@ -24,7 +24,7 @@
 
 ## 二、大纲
 
-![](https://cdn.jsdelivr.net/gh/EayonLee/IMG-Cloud@master/data/JavaGod 成神之路2.png)
+![](https://cdn.jsdelivr.net/gh/EayonLee/IMG-Cloud@master/data/JavaGod2.png)
 
 ## 三、导航
 
