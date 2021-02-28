@@ -1,0 +1,14 @@
+<!--数据库核心配置文件-->
+<configuration>
+
+    <!--数据源配置信息-->
+    <dataSource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property><!--Mysql数据库驱动-->
+        <property name="jdbcUrl" value="jdbc:mysql:///eayon_mybatis"></property><!--数据库地址-->
+        <property name="username" value="root"></property><!--数据库账号-->
+        <property name="password" value="1234"></property><!--数据库密码-->
+    </dataSource>
+
+    <!--存放 *mapper.xml的全路径-->
+    <mapper resource="UserMapper.xml"></mapper>
+</configuration>
