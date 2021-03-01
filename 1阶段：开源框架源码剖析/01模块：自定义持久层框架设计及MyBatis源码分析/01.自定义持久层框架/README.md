@@ -6,9 +6,34 @@
 
 
 ## 目录
-
-[TOC]
-
+- [自定义持久层框架](#自定义持久层框架)
+  - [说在前面](#说在前面)
+  - [目录](#目录)
+  - [概述](#概述)
+  - [一.  分析JDBC操作问题](#一--分析jdbc操作问题)
+    - [1.1 一张图解析传统JDBC代码的缺陷](#11-一张图解析传统jdbc代码的缺陷)
+    - [1.2  原始JDBC开发存在问题解决方案](#12--原始jdbc开发存在问题解决方案)
+  - [二. 自定义持久层框架设计思路](#二-自定义持久层框架设计思路)
+    - [2.1 客户端](#21-客户端)
+      - [（1）提供配置文件供持久层框架读取：](#1提供配置文件供持久层框架读取)
+    - [2.2 自定义持久层框架端](#22-自定义持久层框架端)
+      - [（1）读取客户端提供的配置文件：](#1读取客户端提供的配置文件)
+      - [（2）创建两个容器对象：](#2创建两个容器对象)
+      - [（3）解析配置文件：](#3解析配置文件)
+      - [（4）创建SqlSessionFactory接口及实现类DefaultSqlSessionFactory：](#4创建sqlsessionfactory接口及实现类defaultsqlsessionfactory)
+      - [（5）创建SqlSession接口及实现类DefaultSqlSession：](#5创建sqlsession接口及实现类defaultsqlsession)
+      - [（6）创建Executor接口及实现类SimpleExecutor：](#6创建executor接口及实现类simpleexecutor)
+      - [（7）创建SqlSessionFactoryBuilder：](#7创建sqlsessionfactorybuilder)
+    - [2.3 执行流程图](#23-执行流程图)
+  - [三. 自定义持久层框架实现](#三-自定义持久层框架实现)
+    - [3.1 读取配置文件](#31-读取配置文件)
+    - [3.2 容器对象定义](#32-容器对象定义)
+    - [3.3 解析核心配置文件](#33-解析核心配置文件)
+    - [3.4 创建SqlSessionFactory接口及实现类DefaultSqlSessionFactory](#34-创建sqlsessionfactory接口及实现类defaultsqlsessionfactory)
+    - [3.5 创建Executor接口及实现类SimpleExecutor](#35-创建executor接口及实现类simpleexecutor)
+    - [3.6 定义SqlSession中的CRUD方法](#36-定义sqlsession中的crud方法)
+    - [3.7 客户端测试运行](#37-客户端测试运行)
+    - [3.8 自定义持久层框架优化](#38-自定义持久层框架优化)
 
 
 ## 概述
