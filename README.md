@@ -2,7 +2,7 @@
 
 [![github](https://badgen.net/badge/⭐/GitHub/blue)](https://github.com/EayonLee/JavaGod)
 [![gitee](https://badgen.net/badge/⭐/Gitee/blue)](https://gitee.com/eayonlee)
-[![CSDN](https://badgen.net/badge/⭐/CSDN/blue)](https://blog.csdn.net/qq_20492277?spm=1010.2135.3001.5343)
+[![CSDN](https://badgen.net/badge/⭐/CSDN/blue)](https://blog.csdn.net/qq_20492277/article/details/114269863)
 [![stars](https://badgen.net/github/stars/EayonLee/JavaGod)](https://github.com/EayonLee/JavaGod)
 [![forks](https://badgen.net/github/forks/EayonLee/JavaGod)](https://github.com/EayonLee/JavaGod)
 [![original](https://badgen.net/badge/original/EayonLee/orange)](https://github.com/EayonLee/JavaGod)
