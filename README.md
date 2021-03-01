@@ -10,6 +10,11 @@
 [![Twitter](https://badgen.net/badge/Twitter/EayonLeee/cyan)](https://twitter.com/EayonLeee)
 [![FaceBook](https://badgen.net/badge/FaceBook/EayonLee/cyan)](https://www.facebook.com/)
 
+>🌍Github：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://github.com/EayonLee/JavaGod)
+>🪐CSDN：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://blog.csdn.net/qq_20492277/article/details/114269863)
+
+
+
 ## 说在前面
 
 🙊嘿兄弟！
@@ -22,13 +27,19 @@
 
 😎来吧，我已经帮你总结好了Java工程师进阶课程，并基于拉钩教育Java工程师高薪训练营课程总结记录以及课程改进，咱也当一把JavaGod！
 
+
+
 **看看：**
+🚀Java超神之路：是一个互联网Java工程师进阶教程：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识。
 
-**由于内容较多，而且需要我每一篇文章去总结和码字，所以更新较慢。**
+🚖包含：MyBatis、Spring、SpringCloud、Dubbo、Docker、K8S、MySQL、Redis、RocketMQ、Kafka、ES、Flink、MongoDB、HBase、DevOps、Nginx、Tomcat、APM、FastDFS..........众多技术点。
 
-**非常希望大家可以给个Star⭐留个脚印，我会持续更新的，谢谢老板们**
 
-> 基于拉钩教育Java工程师高薪训练营课程总结记录以及课程改进
+>由于内容较多，而且需要我每一篇文章去总结和码字，所以更新较慢。
+>
+>非常希望大家可以给个Star⭐留个脚印，我会持续更新的，谢谢老板们
+>
+>基于拉钩教育Java工程师高薪训练营课程总结记录以及课程改进
 
 
 
