@@ -1,5 +1,13 @@
 # JavaGod
 
+[![github](https://badgen.net/badge/⭐/GitHub/blue)](https://github.com/EayonLee/JavaGod)
+[![gitee](https://badgen.net/badge/⭐/Gitee/blue)](https://gitee.com/eayonlee)
+[![stars](https://badgen.net/github/stars/EayonLee/JavaGod)](https://github.com/EayonLee/JavaGod)
+[![forks](https://badgen.net/github/forks/EayonLee/JavaGod)](https://github.com/EayonLee/JavaGod)
+[![original](https://badgen.net/badge/original/EayonLee/orange)](https://github.com/EayonLee/JavaGod)
+[![Instagram](https://badgen.net/badge/Instagram/eayon.lee/cyan)](https://www.instagram.com/eayon.lee/)
+[![Twitter](https://badgen.net/badge/Twitter/EayonLeee/cyan)](https://twitter.com/EayonLeee)
+[![FaceBook](https://badgen.net/badge/FaceBook/EayonLee/cyan)](https://www.facebook.com/)
 
 ## 说在前面
 
