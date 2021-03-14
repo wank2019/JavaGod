@@ -2,7 +2,7 @@
 
 ## 说在前面
 
->**本章相关代码及笔记地址：**[**飞机票🚀**](https://github.com/EayonLee/JavaGod/tree/main/1阶段：开源框架源码剖析/01模块：自定义持久层框架设计及MyBatis源码分析)
+>**本章相关代码及笔记地址：**[**飞机票🚀**](https://github.com/EayonLee/JavaGod/tree/main/1%E9%98%B6%E6%AE%B5%EF%BC%9A%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90/01%E6%A8%A1%E5%9D%97%EF%BC%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%81%E4%B9%85%E5%B1%82%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1%E5%8F%8AMyBatis%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/02.MyBatis%E5%9F%BA%E7%A1%80%E5%9B%9E%E9%A1%BE%E5%8F%8A%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8)
 >
 >🌍Github：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://github.com/EayonLee/JavaGod)<br>
 >🪐CSDN：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://blog.csdn.net/qq_20492277/article/details/114269863)
