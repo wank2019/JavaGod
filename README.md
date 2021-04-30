@@ -62,13 +62,13 @@
 * 第七阶段：分布式搜索引擎进阶
 * 第八阶段：分布式实时流式计算引擎Flink
 * [第九阶段：Docker容器 & CI/CD & DevOps & APM（PS:由于公司老大让我研究一下K8S，所以正好先更新第九阶段，第一阶段暂时搁置🎃）](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm)
-  * [模块一：Docker容器虚拟化技术](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm/01%E6%A8%A1%E5%9D%97%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF)
-    * [任务一：Docker快速入门（👽更新中）](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm/01%E6%A8%A1%E5%9D%97%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/01.%20Docker%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8)
+  * 模块一：Docker容器虚拟化技术
+    * 任务一：Docker快速入门
     * 任务二：Docker核心原理
     * 任务三：Docker运维管理
-  * 模块二：K8s容器编排系统
-    * 任务一：Kubernetes快速实战
-    * 任务二：Kubernetes核心原理
+  * [模块二：K8s容器编排系统（😵更新中）](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm)
+    * [任务一：Kubernetes二进制高可用部署（😎完结）](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm/02%E6%A8%A1%E5%9D%97%EF%BC%9AK8s%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/01.%20Kubernetes%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%AB%98%E5%8F%AF%E7%94%A8%E9%83%A8%E7%BD%B2)
+    * 任务二：Kubernetes快速实操
     * 任务三：Kubernetes运维管理
   * 模块三：CI_CD、DevOps
     * 任务一：CICD、Devops概述
