@@ -68,7 +68,7 @@
     * 任务三：Docker运维管理
   * [模块二：K8s容器编排系统（😵更新中）](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm)
     * [任务一：Kubernetes二进制高可用部署（😎完结）](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm/02%E6%A8%A1%E5%9D%97%EF%BC%9AK8s%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/01.%20Kubernetes%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%AB%98%E5%8F%AF%E7%94%A8%E9%83%A8%E7%BD%B2)
-    * 任务二：Kubernetes快速实操
+    * [任务二：Kubernetes快速实战]()
     * 任务三：Kubernetes运维管理
   * 模块三：CI_CD、DevOps
     * 任务一：CICD、Devops概述
