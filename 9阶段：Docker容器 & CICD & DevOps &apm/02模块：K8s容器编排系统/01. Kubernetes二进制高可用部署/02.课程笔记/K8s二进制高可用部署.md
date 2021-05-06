@@ -1,9 +1,17 @@
+# K8s二进制高可用部署
+
+## 说在前面
+>**本章相关代码及笔记地址：**[**飞机票🚀**](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm/02%E6%A8%A1%E5%9D%97%EF%BC%9AK8s%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/01.%20Kubernetes%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%AB%98%E5%8F%AF%E7%94%A8%E9%83%A8%E7%BD%B2)
+>
+>🌍Github：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://github.com/EayonLee/JavaGod)<br>
+>🪐CSDN：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://blog.csdn.net/qq_20492277/article/details/114269863)
+
 
 # 前言
 本文所有涉及软件包等文件均在如下网盘，当然，你也可以根据文中给出链接自行逐个下载
 ```text
-链接：https://pan.baidu.com/s/154-NyIjrhppaiU1aYzv66Q 
-提取码：4y4d 
+链接：https://pan.baidu.com/s/1c4OjB9HsSb9hRupFHsgCyw 
+提取码：6awp 
 ```
 
 # 目录
@@ -2442,19 +2450,9 @@ yf-k8s-160006    Ready    <none>   31d   v1.20.4
 yf-k8s-160007    Ready    <none>   31d   v1.20.4
 ```
 
+**多说一嘴**：
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+>**本章相关代码及笔记地址：**[**飞机票🚀**](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm/02%E6%A8%A1%E5%9D%97%EF%BC%9AK8s%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/01.%20Kubernetes%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%AB%98%E5%8F%AF%E7%94%A8%E9%83%A8%E7%BD%B2)
+>
+>🌍Github：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://github.com/EayonLee/JavaGod)
+>🪐CSDN：[🚀Java超神之路：【🍔Java全生态技术学习笔记，一起超神吧🍔】](https://blog.csdn.net/qq_20492277/article/details/114269863)
