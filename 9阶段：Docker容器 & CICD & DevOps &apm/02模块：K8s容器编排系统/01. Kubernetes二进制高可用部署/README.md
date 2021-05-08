@@ -2190,8 +2190,12 @@ etcd-0                 Healthy   {"health":"true"}
 
 ```shell
 #在lb主备两个节点操作
-yum install epel-release -y
-yum install nginx keepalived -y
+#yum install epel-release -y
+apt-get install nginx -y
+apt-get install keepalived -y
+
+#彻底卸载nginx
+apt-get --purge autoremove nginx
 ```
 
 ### 8.2.2 Nginx配置文件
@@ -2204,7 +2208,7 @@ worker_processes auto;
 error_log /var/log/nginx/error.log;
 pid /run/nginx.pid;
 
-include /usr/share/nginx/modules/*.conf;
+load_module  modules/ngx_stream_module.so;
 
 events {
     worker_connections 1024;
@@ -2219,11 +2223,10 @@ stream {
 
     upstream k8s-apiserver {
        server 10.0.160.5:6443;   # Master1 APISERVER IP:PORT
-       server 10.0.160.8:6443;   # Master2 APISERVER IP:PORT
     }
     
     server {
-       listen 16443; # 如果你的nginx与master节点复用，这个监听端口不能是6443，否则会冲突
+       listen 16443; # 由于nginx与master节点复用，这个监听端口不能是6443，否则会冲突
        proxy_pass k8s-apiserver;
     }
 }
@@ -2244,13 +2247,6 @@ http {
     include             /etc/nginx/mime.types;
     default_type        application/octet-stream;
 
-    server {
-        listen       80 default_server;
-        server_name  _;
-
-        location / {
-        }
-    }
 }
 EOF
 ```
@@ -2446,6 +2442,7 @@ systemctl restart kubelet kube-proxy
 ```shell
 kubectl get node 
 NAME            STATUS   ROLES    AGE   VERSION 
+yf-k8s-160005    Ready    <none>   31d   v1.20.4 
 yf-k8s-160006    Ready    <none>   31d   v1.20.4 
 yf-k8s-160007    Ready    <none>   31d   v1.20.4
 ```
