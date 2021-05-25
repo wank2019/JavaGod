@@ -755,7 +755,7 @@ ETCDCTL_API=3  /opt/etcd/bin/etcdctl \
 
 这样我们不仅可以学习到如何部署K8s高可用集群，也可以学习到如果对K8s集群节点进行扩容。
 
-
+**注意**：``先将K8s集群环境中所有节点（包含所有Master和Node）的IP及主机名添加至所有Master节点的HOST文件中``
 
 ## 3.1 生成kube-apisever证书
 
@@ -1355,7 +1355,7 @@ kubectl create clusterrolebinding kubelet-bootstrap \
 ![undefined](https://cdn.jsdelivr.net/gh/EayonLee/IMG-Cloud@master/data/image-20210420180245938.png)
 
 # 四. 部署Work Node节点
-
+**注意**：``先将该Node节点的IP及主机名添加至所有Master节点的HOST文件中``
 ## 4.1 创建工作目录并拷贝二进制文件
 
 ```shell
@@ -2009,7 +2009,16 @@ Address 1: 10.0.0.1 kubernetes.default.svc.cluster.local
 
 扩容之前该新节点应该完成本文档``1.4系统初始化（包含Docker安装）``的操作。
 
-## 7.1 拷贝已部署好的Node相关文件到扩容节点
+## 7.1 添加HOSTS
+**注意**：将该扩容的Node节点主机名及IP添加至**所有**Master节点的HOST中
+```shell
+#在所有Master节点上操作
+vim /etc/hosts
+#添加该扩容的Node节点主机名及IP
+1.0.0xx.xxx k8s-node #举例
+```
+
+## 7.2 拷贝已部署好的Node相关文件到扩容节点
 
 在Node1节点将Worker Node涉及文件拷贝到扩容节点``Node2：10.0.160.7``
 
@@ -2019,12 +2028,14 @@ scp -r /opt/kubernetes root@10.0.160.7:/opt/
 
 scp -r /usr/lib/systemd/system/{kubelet,kube-proxy}.service root@10.0.160.7:/usr/lib/systemd/system
 
-scp /opt/kubernetes/ssl/ca.pem root@10.0.160.7:/opt/kubernetes/ssl
+scp -r /opt/kubernetes/ssl/ca.pem root@10.0.160.7:/opt/kubernetes/ssl
+
+scp -r /opt/cni root@10.0.160.7:/opt
 ```
 
 
 
-## 7.2 删除扩容节点上的kubelet证书及kubeconfig文件
+## 7.3 删除扩容节点上的kubelet证书及kubeconfig文件
 
 ```shell
 #在Node2节点操作
@@ -2036,7 +2047,7 @@ rm -f /opt/kubernetes/ssl/kubelet*
 
 
 
-## 7.3 修改扩容节点配置文件
+## 7.4 修改扩容节点配置文件
 
 **修改kubelet.conf**
 
@@ -2060,7 +2071,7 @@ hostnameOverride: yf-k8s-160007
 
 
 
-## 7.4 启动扩容节点kube-proxy
+## 7.5 启动扩容节点kube-proxy
 
 ```shell
 systemctl daemon-reload
@@ -2070,7 +2081,7 @@ systemctl enable kubelet kube-proxy
 
 
 
-## 7.5 在Master节点批准扩容节点的kubelet证书申请
+## 7.6 在Master节点批准扩容节点的kubelet证书申请
 
 ```shell
 # 查看证书请求
@@ -2084,7 +2095,7 @@ kubectl certificate approve node-csr-4zTjsaVSrhuyhIGqsefxzVoZDCNKei-aE2jyTP81Uro
 
 
 
-## 7.6 查看扩容Node状态
+## 7.7 查看扩容Node状态
 
 ```shell
 kubectl get node
@@ -2092,7 +2103,9 @@ NAME            STATUS   ROLES    AGE     VERSION
 yf-k8s-160006   Ready    <none>   47m     v1.20.4
 yf-k8s-160007    Ready    <none>   6m49s   v1.20.4
 ```
-
+> 如果新增的扩容节点是NotReady状态的话可以通过如下命令查看该节点的``calico``组件是否启动成功
+  
+  ``kubectl get pod -n kube-system -owide``
 
 
 # 八. 扩容Master（实现高可用架构）
@@ -2103,14 +2116,18 @@ yf-k8s-160007    Ready    <none>   6m49s   v1.20.4
 
 Master2 与已部署的Master1所有操作一致。所以我们只需将Master1所有K8s文件拷贝过来，再修改下服务器IP和主机名启动即可。
 
-### 8.1.1 创建Etcd证书目录
+### 8.1.1 修改HOSTS
+**将K8s集群中所有节点的主机名和IP添加到该扩容Master节点的HOSTS中**
+``也可以从别的Master节点直接复制过来``
+
+### 8.1.2 创建Etcd证书目录
 
 ```shell
 #在Master2扩容节点创建etcd证书目录
 mkdir -p /opt/etcd/ssl
 ```
 
-### 8.1.2 拷贝已部署好的Master节点相关文件到扩容节点
+### 8.1.3 拷贝已部署好的Master节点相关文件到扩容节点
 
 ```shell
 #拷贝Master1上所有K8s文件和etcd证书到Master2：
@@ -2121,7 +2138,7 @@ scp /usr/bin/kubectl  root@10.0.160.8:/usr/bin
 scp -r ~/.kube root@10.0.160.8:~
 ```
 
-### 8..1.3 删除证书文件
+### 8..1.4 删除证书文件
 
 删除kubelet证书和kubeconfig文件
 
@@ -2131,7 +2148,7 @@ rm -f /opt/kubernetes/cfg/kubelet.kubeconfig
 rm -f /opt/kubernetes/ssl/kubelet*
 ```
 
-### 8.1.4 修改配置文件IP和主机名
+### 8.1.5 修改配置文件IP和主机名
 
 修改apiserver、kubelet和kube-proxy配置文件为本地IP
 
@@ -2161,7 +2178,7 @@ server: https://10.0.160.8:6443
 
 ```
 
-### 8.1.5 启动
+### 8.1.6 启动
 
 ```shell
 systemctl daemon-reload
@@ -2169,7 +2186,7 @@ systemctl start kube-apiserver kube-controller-manager kube-scheduler kubelet ku
 systemctl enable kube-apiserver kube-controller-manager kube-scheduler kubelet kube-proxy
 ```
 
-### 8.1.6 查看集群状态
+### 8.1.7 查看集群状态
 
 ```shell
 #在Master2节点操作
