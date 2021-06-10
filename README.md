@@ -65,7 +65,7 @@
   	  * [任务一：Nacos服务注册发现及配置中心（😎完结）](https://github.com/EayonLee/JavaGod/tree/main/3%E9%98%B6%E6%AE%B5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%20%26%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B7%B1%E5%85%A5(%E6%9B%B4%E6%96%B0%E4%B8%AD)/04%E6%A8%A1%E5%9D%97%EF%BC%9ASpringCloudAlibaba%E5%AE%9E%E6%88%98(%E5%8D%B3%E5%B0%86%E5%AE%8C%E7%BB%93)/01.Nacos%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%8F%91%E7%8E%B0%E5%8F%8A%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83)
   	  * [任务二：服务调用：RestTemplate_Ribbon_Feign（😎完结）](https://github.com/EayonLee/JavaGod/tree/main/3%E9%98%B6%E6%AE%B5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%20%26%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B7%B1%E5%85%A5(%E6%9B%B4%E6%96%B0%E4%B8%AD)/04%E6%A8%A1%E5%9D%97%EF%BC%9ASpringCloudAlibaba%E5%AE%9E%E6%88%98(%E5%8D%B3%E5%B0%86%E5%AE%8C%E7%BB%93)/02.%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8%EF%BC%9ARestTemplate_Ribbon_Feign)
   	  * [任务三：Sentinel服务降级熔断及限流（😎完结）](https://github.com/EayonLee/JavaGod/tree/main/3%E9%98%B6%E6%AE%B5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%20%26%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B7%B1%E5%85%A5(%E6%9B%B4%E6%96%B0%E4%B8%AD)/04%E6%A8%A1%E5%9D%97%EF%BC%9ASpringCloudAlibaba%E5%AE%9E%E6%88%98(%E5%8D%B3%E5%B0%86%E5%AE%8C%E7%BB%93)/03.Sentinel%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7%E7%86%94%E6%96%AD%E5%8F%8A%E9%99%90%E6%B5%81)
-  	  * 任务四：Seata分布式事务
+  	  * [任务四：Seata分布式事务（👾更新中..）]()
 * 第四阶段：大型分布式存储系统架构进阶
 * 第五阶段：大型分布式系统缓存架构进阶
 * 第六阶段：分布式消息服务中间件进阶
