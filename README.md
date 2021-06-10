@@ -73,27 +73,21 @@
   	  * [任务三：Sentinel服务降级熔断及限流（😎完结）](https://github.com/EayonLee/JavaGod/tree/main/3%E9%98%B6%E6%AE%B5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%20%26%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B7%B1%E5%85%A5/04%E6%A8%A1%E5%9D%97%EF%BC%9ASpringCloudAlibaba%E5%AE%9E%E6%88%98/03.Sentinel%E6%9C%8D%E5%8A%A1%E9%99%8D%E7%BA%A7%E7%86%94%E6%96%AD%E5%8F%8A%E9%99%90%E6%B5%81)
   	  * [任务四：Seata分布式事务（👾更新中..）](https://github.com/EayonLee/JavaGod/tree/main/3%E9%98%B6%E6%AE%B5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%20%26%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%B7%B1%E5%85%A5/04%E6%A8%A1%E5%9D%97%EF%BC%9ASpringCloudAlibaba%E5%AE%9E%E6%88%98/04.Seata%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1)
 
----
 
 ### 第四阶段：大型分布式存储系统架构进阶
 
----
 
 ### 第五阶段：大型分布式系统缓存架构进阶
 
----
 
 ### 第六阶段：分布式消息服务中间件进阶
 
----
 
 ### 第七阶段：分布式搜索引擎进阶
 
----
 
 ### 第八阶段：分布式实时流式计算引擎Flink
 
----
 
 ### [第九阶段：Docker容器 & CI/CD & DevOps & APM](https://github.com/EayonLee/JavaGod/tree/main/9%E9%98%B6%E6%AE%B5%EF%BC%9ADocker%E5%AE%B9%E5%99%A8%20%26%20CICD%20%26%20DevOps%20%26apm)
   * 模块一：Docker容器虚拟化技术
@@ -103,14 +97,11 @@
   * 模块三：CI_CD、DevOps
   * 模块四：APM管理和性能监控工具
 
----
 
 ### 第十阶段：底层调优与算法深入
 
----
 
 ### 第十一阶段：大型互联网项目实战和业务解决方案
 
----
 
 >  **持续更新中 ~~ 给个Star⭐留个脚印**
